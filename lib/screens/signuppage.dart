@@ -1,6 +1,6 @@
-import 'package:book_sell/homepage.dart';
-import 'package:book_sell/loginpage.dart';
-import 'package:book_sell/models/usermodel.dart';
+import 'package:book_sell/screens/homepage.dart';
+import 'package:book_sell/screens/loginpage.dart';
+import 'package:book_sell/servises/usermodel.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';

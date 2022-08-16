@@ -1,6 +1,6 @@
-import 'package:book_sell/homepage.dart';
-import 'package:book_sell/routes.dart';
-import 'package:book_sell/signuppage.dart';
+import 'package:book_sell/screens/homepage.dart';
+import 'package:book_sell/screens/routes.dart';
+import 'package:book_sell/screens/signuppage.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 
 import 'package:flutter/material.dart';

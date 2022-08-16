@@ -1,13 +1,12 @@
-import 'package:book_sell/cartpage.dart';
-import 'package:book_sell/detailspage.dart';
-import 'package:book_sell/splashscreen.dart';
+import 'package:book_sell/screens/cartpage.dart';
+import 'package:book_sell/screens/detailspage.dart';
+import 'package:book_sell/screens/homepage.dart';
+import 'package:book_sell/screens/routes.dart';
+import 'package:book_sell/screens/splashscreen.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'routes.dart';
-import 'loginpage.dart';
-import 'signuppage.dart';
 import 'package:firebase_core/firebase_core.dart';
-import 'homepage.dart';
 
 Future main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -22,7 +21,7 @@ class Myapp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return GetMaterialApp(
         title: "book sell",
         debugShowCheckedModeBanner: false,
         theme: ThemeData(
@@ -31,12 +30,8 @@ class Myapp extends StatelessWidget {
         home: Homepage(),
         routes: {
           Myroutes.homepage: (context) => Homepage(),
-          Myroutes.detailspage: (context) => Detailspage(
-                get: data,
-              ),
-          Myroutes.cartpage: (context) => Cartpage(
-                cartdata: data,
-              ),
+          Myroutes.detailspage: (context) => Detailspage(),
+          Myroutes.cartpage: (context) => Cartpage(),
           // Myroutes.loginpage: (context) => Loginpage(),
           // Myroutes.signuppage: (context) => Signuppage(),
         });
